@@ -17,11 +17,12 @@ typedef enum
     EN_CARD_TYPE_BUTT
 }EN_CARD_TYPE;
 
+
 /*
 @ 初始化所有卡信息
 @ 返回值: 无
 */
-void InitCardManagerInfo();
+void InitCardManagerInfo(void);
 
 /*
 @ 开卡，分配卡号和卡信息

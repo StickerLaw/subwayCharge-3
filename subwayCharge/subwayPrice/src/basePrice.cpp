@@ -11,9 +11,11 @@ using namespace std;
 */
 int GetBasePrice(unsigned int meters)
 {
-    if(meters == 0){
+    if(meters < 0){
         return -1;
-    }else if(meters <= 3000){
+    }else if(meters == 0){
+		return 0;
+	}else if(meters <= 3000){
         return 2;
     }else if(meters <= 5000){
         return 3;
